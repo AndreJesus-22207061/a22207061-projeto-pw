@@ -1,0 +1,21 @@
+{% extends 'autenticacao/layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h3>Bem vindo, {{request.user.first_name}} {{request.user.last_name}}</h3>
+
+        <ul class="user-info">
+            <li><strong>Username:</strong> {{request.user.username}}</li>
+            <li><strong>Email:</strong> {{request.user.email}}</li>
+        </ul>
+
+        <div class="actions">
+            <a href="{% url 'logout' %}" class="btn btn-primary"><b>Logout</b></a>
+            <a href="{% url 'portfolio:index' %}" class="btn btn-secondary"><b>Portfólio</b></a>
+            <a href="{% url 'bandas:lista_bandas' %}" class="btn btn-secondary"><b>Bandas</b></a>
+            <a href="{% url 'appcurso:curso' %}" class="btn btn-secondary"><b>Curso</b></a>
+            <a href="{% url 'blogues:artigos' %}" class="btn btn-secondary"><b>Artigos</b></a>
+            <a href="{% url 'meteo:previsao_proximos_5dias' %}" class="btn btn-secondary"><b>Meteo</b></a>
+        </div>
+    </div>
+{% endblock %}

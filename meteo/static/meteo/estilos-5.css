@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.weather-day-5 {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    margin: 0 10px 20px;
+    max-width: 200px; /* Define uma largura máxima para manter o layout responsivo */
+}
+
+.weather-day-5 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.weather-day-5 p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.weather-day-5 .min-temp-5,
+.weather-day-5 .max-temp-5,
+.weather-day-5 .descricaoTempo-5 {
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.weather-day-5 img {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Adicionando uma animação suave para as mudanças no ícone */
+.weather-day-5 img {
+    transition: transform 0.3s;
+}
+
+.weather-day-5 img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .weather-container-5 {
+        flex-direction: column;
+        align-items: center; /* Centraliza as previsões verticalmente */
+    }
+
+    .weather-day-5 {
+        margin: 0 auto 20px; /* Adiciona margem inferior e centraliza horizontalmente */
+        max-width: none;
+        width: calc(100% - 20px); /* Define a largura para ocupar a maior parte da tela, com espaço para margem */
+    }
+
+    .weather-day-5 {
+        flex: none;
+    }
+}
+
+
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    margin-bottom: 10px; /* Adiciona um espaço entre os botões */
+}
+
+.button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/estilos.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+     <div class="header-buttons-container">
+        <div class="header-buttons">
+            <button id="dark-mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:3ch; height:3ch"><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg></button>
+            <a href="{% url 'portfolio:index' %}"><button>Home</button></a>
+            <a href="{% url 'appcurso:lista_projetos' %}"><button>Projects</button></a>
+            <a href="{% url 'portfolio:aboutme' %}"><button>About Me</button></a>
+            <a href="{% url 'portfolio:sobrepw' %}"><button>Programação Web</button></a>
+            <a href="{% url 'portfolio:contacts' %}"><button>Contacts</button></a>
+        </div>
+        <div class="login-buttons">
+            {% if request.user.is_authenticated %}
+                <a href="{% url 'logout' %}"><button><b>Logout</b></button></a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:4ch; height:4ch; margin-top:2px"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                {{request.user.username}}
+            {% else %}
+                <a href="{% url 'login' %}"><b><button>Login</b></button></a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="title-container">
+            <h1>O Meu Portfólio</h1>
+        </div>
+        <div class="subtitle-container">
+            <p>Believe you can and you're halfway there!</p>
+        </div>
+    </div>
+
+    <div class="background-fixed">
+        <div class="background-content">
+            <div class="background-text">
+                <p class="page-title">Ao longo deste semestre, desenvolvi e aperfeiçoei três websites. Estes projetos permitiram-me aplicar conhecimentos teóricos na prática, explorar novas tecnologias e aprimorar as minhas competências em programação web.</p>
+            </div>
+
+            <div class="button-container">
+                <button class="button-background" onclick="openModalBandas()">Site Bandas</button>
+                <button class="button-background" onclick="openModalCurso()">Site Curso</button>
+                <button class="button-background" onclick="openModalBlogues()">Site Blogs</button>
+                <button class="button-background" onclick="openModalMeteo()">Site Meteo</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModalBandas" class="modal">
+        <span class="close" onclick="closeModalBandas()">&times;</span>
+        <img class="modal-content" id="imgBandas" onclick="window.location.href = '{% url 'bandas:lista_bandas' %}';">
+        <div id="captionBandas"></div>
+    </div>
+    <div id="myModalCurso" class="modal">
+        <span class="close" onclick="closeModalCurso()">&times;</span>
+        <img class="modal-content" id="imgCurso" onclick="window.location.href = '{% url 'appcurso:curso' %}';">
+        <div id="captionCurso"></div>
+    </div>
+    <div id="myModalBlogues" class="modal">
+        <span class="close" onclick="closeModalBlogues()">&times;</span>
+        <img class="modal-content" id="imgBlogues" onclick="window.location.href = '{% url 'blogues:artigos' %}';">
+        <div id="captionBlogues"></div>
+    </div>
+    <div id="myModalMeteo" class="modal">
+        <span class="close" onclick="closeModalMeteo()">&times;</span>
+        <img class="modal-content" id="imgMeteo" onclick="window.location.href = '{% url 'meteo:previsao_proximos_5dias' %}';">
+        <div id="captionMeteo"></div>
+    </div>
+    <div class="footer">
+    <p class="center-text">&copy; 2024 Programação Web, Universidade Lusófona - André Jesus</p>
+    <div class="right-container">
+        <div class="clock-container">
+            <p id="clock"></p>
+        </div>
+        <div class="weather-container">
+            <div class="weather-info">
+                {% if icon_url %}
+                    <img src="{{ icon_url }}" class="weather-icon-footer">
+                {% else %}
+                    <p class="no-image">Não encontrou a imagem</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+
+        function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('.header-buttons-container').classList.toggle('dark-mode');
+        document.querySelector('.hero-image').classList.toggle('dark-mode');
+        document.querySelector('.background-fixed').classList.toggle('dark-mode');
+        document.querySelector('.footer').classList.toggle('dark-mode');
+
+        // Toggle class for buttons
+        document.querySelectorAll('.header-buttons button, .login-buttons button, .button-background').forEach(button => {
+            button.classList.toggle('dark-mode');
+        });
+
+        // Save the preference to localStorage
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    }
+
+    // Load the preference from localStorage
+    window.onload = function() {
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.header-buttons-container').classList.add('dark-mode');
+            document.querySelector('.hero-image').classList.add('dark-mode');
+            document.querySelector('.background-fixed').classList.add('dark-mode');
+            document.querySelector('.footer').classList.add('dark-mode');
+
+            // Apply dark mode to buttons
+            document.querySelectorAll('.header-buttons button, .login-buttons button, .button-background').forEach(button => {
+                button.classList.add('dark-mode');
+            });
+        }
+    }
+
+    document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+
+
+
+        function openModalBandas() {
+        document.getElementById('myModalBandas').style.display = "block";
+        document.getElementById("imgBandas").src = "{% static 'portfolio/bandas.PNG' %}";
+        document.getElementById("captionBandas").innerHTML = "Descubra a Essência da Música Pop!<br>Explore Alguns dos Artistas e Bandas Pop Mais Reconhecidos!<br>Conecte-se com o Ritmo da Cultura Pop!";
+        }
+
+        function closeModalBandas() {
+        document.getElementById('myModalBandas').style.display = "none";
+        }
+        function openModalCurso() {
+        document.getElementById('myModalCurso').style.display = "block";
+        document.getElementById("imgCurso").src = "{% static 'portfolio/Curso.PNG' %}";
+        document.getElementById("captionCurso").innerHTML = "Aqui poderá encontrar o meu site do curso de Engenharia Informática na Universidade Lusófona.<br>Encontrará informações relativas a disciplinas, projetos e muito mais...";
+        }
+
+        function closeModalCurso() {
+        document.getElementById('myModalCurso').style.display = "none";
+        }
+        function openModalBlogues() {
+        document.getElementById('myModalBlogues').style.display = "block";
+        document.getElementById("imgBlogues").src  = "{% static 'portfolio/blogues.PNG' %}";
+        document.getElementById("captionBlogues").innerHTML = "Esta é a minha aplicação de Blogs, aqui poderá encontrar todo o tipo de noticias.<br>Atualizamos constantemente o conteúdo para garantir que você tenha acesso às informações mais recentes e relevantes.";
+        }
+
+        function closeModalBlogues() {
+        document.getElementById('myModalBlogues').style.display = "none";
+        }
+        function openModalMeteo() {
+        document.getElementById('myModalMeteo').style.display = "block";
+        document.getElementById("imgMeteo").src  = "{% static 'portfolio/meteo.png' %}";
+        document.getElementById("captionMeteo").innerHTML = "Este é a minha aplicação de Meteorologia, aqui poderá encontrar informação relativa á meteorologia de Lisboa no presente dia, bem como uma previsão para os próximos 5 dias.<br>Encontrará também uma explicação muito breve de como funciona a API.";
+        }
+
+        function closeModalMeteo() {
+        document.getElementById('myModalMeteo').style.display = "none";
+        }
+
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var formattedTime = hours + ':' + minutes + ':' + seconds;
+            var date = now.toLocaleDateString('pt-BR');
+            document.getElementById('clock').innerHTML = date + ' ' + formattedTime;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
+
+</main>
+</body>
+</html>
+
+
+
+

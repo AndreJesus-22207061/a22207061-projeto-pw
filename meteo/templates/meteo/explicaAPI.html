@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação da API de Previsão Meteorológica</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'meteo/meteo.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <a href="{% url 'meteo:tempo_lisboa' %}" class="button"><b>Tempo de Hoje em Lisboa</b></a>
+            <a href="{% url 'meteo:previsao_proximos_5dias' %}" class="button"><b>Previsão dos Próximos 5 Dias em Lisboa</b></a>
+        </div>
+        <h1>Explicação da API de Previsão Meteorológica</h1>
+        <section>
+            <h2>Funções Principais</h2>
+            <h3>tempo_lisboa(request)</h3>
+            <p><strong>Objetivo:</strong> Retorna a previsão do tempo para Lisboa no dia atual.</p>
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a previsão diária de Lisboa.</li>
+                <li>Faz uma segunda requisição para obter a descrição dos tipos de tempo.</li>
+                <li>Extrai as variáveis necessárias (temperaturas mínima e máxima, data, descrição do tempo) e monta a URL do ícone correspondente ao tipo de tempo.</li>
+                <li>Renderiza a página HTML 'tempo_lisboa.html' com as informações obtidas.</li>
+            </ul>
+
+            <h3>previsao_proximos_5dias(request)</h3>
+            <p><strong>Objetivo:</strong> Retorna a previsão do tempo para Lisboa para os próximos 5 dias.</p>
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a previsão diária de Lisboa para os próximos 5 dias.</li>
+                <li>Faz uma segunda requisição para obter a descrição dos tipos de tempo.</li>
+                <li>Para cada um dos próximos 5 dias, extrai as variáveis necessárias e monta a URL do ícone correspondente ao tipo de tempo.</li>
+                <li>Renderiza a página HTML 'previsao_proximos_5dias.html' com as informações obtidas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Função Auxiliar</h2>
+            <h3>obter_nome_cidade(cidade_id)</h3>
+            <p><strong>Objetivo:</strong> Retorna o nome da cidade com base no seu ID.</p>
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a lista de cidades.</li>
+                <li>Procura na lista o ID da cidade fornecido e retorna o nome correspondente.</li>
+            </ul>
+
+            
+        </section>
+
+        <section>
+            <h2>Endpoints da API</h2>
+            <h3>listar_cidades(request)</h3>
+            <p><strong>Objetivo:</strong> Retorna uma lista de todas as cidades disponíveis na API IPMA.</p>
+            <p><strong>Endpoint: </strong><code>https://a22207061.pythonanywhere.com/meteo/api/cidades</code></p>
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a lista de cidades.</li>
+                <li>Extrai o nome e o ID de cada cidade e retorna como JSON.</li>
+            </ul>
+            <h3>previsao_hojeAPI(request, cidade_id)</h3>
+            <p><strong>Objetivo:</strong> Retorna a previsão do tempo para o dia atual de uma cidade específica.</p>
+            <p><strong>Endpoint:</strong> <code>https://a22207061.pythonanywhere.com/meteo/api/previsao_hoje/{cidade_id}/</code></p>
+            <p>Substitua <code>{cidade_id}</code> pelo ID da cidade desejada. Este endpoint retorna a previsão do tempo para o dia atual da cidade específica em formato JSON.</p>
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a previsão diária da cidade com o ID fornecido.</li>
+                <li>Faz uma segunda requisição para obter a descrição dos tipos de tempo.</li>
+                <li>Extrai as variáveis necessárias (temperaturas, data, descrição do tempo, probabilidade de precipitação) e monta a URL do ícone correspondente ao tipo de tempo.</li>
+                <li>Retorna as informações como JSON.</li>
+            </ul>
+
+            <h3>previsao_proximos_5diasAPI(request, cidade_id)</h3>
+            <p><strong>Objetivo:</strong> Retorna a previsão do tempo para os próximos 5 dias de uma cidade específica.</p>
+            <p><strong>Endpoint: </strong><code>https://a22207061.pythonanywhere.com/meteo/api/previsao_proximos_5dias/{cidade_id}/</code></p>
+            <p>Substitua <code>{cidade_id}</code> pelo ID da cidade desejada. Este endpoint retorna a previsão do tempo para os próximos 5 dias da cidade específica em formato JSON.</p>
+
+            <p><strong>Passos:</strong></p>
+            <ul>
+                <li>Faz uma requisição à API IPMA para obter a previsão diária da cidade com o ID fornecido para os próximos 5 dias.</li>
+                <li>Faz uma segunda requisição para obter a descrição dos tipos de tempo.</li>
+                <li>Para cada um dos próximos 5 dias, extrai as variáveis necessárias e monta a URL do ícone correspondente ao tipo de tempo.</li>
+                <li>Retorna as informações como JSON.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Estrutura da Resposta</h2>
+            <p><strong>Previsão do Dia Atual:</strong></p>
+            <pre><code>{
+    "cidade": "Lisboa",
+    "data": "2024-06-07",
+    "min_temp": 18.5,
+    "max_temp": 28.3,
+    "descricaoTempo": "Céu Limpo",
+    "precipitacao": 0,
+    "icon_url": "w_ic_d_01anim.svg"
+}</code></pre>
+
+            <p><strong>Previsão dos Próximos 5 Dias:</strong></p>
+            <pre><code>{
+    "cidade": "Lisboa",
+    "previsoes": [
+        {
+            "data": "2024-06-07",
+            "min_temp": 18.5,
+            "max_temp": 28.3,
+            "descricaoTempo": "Céu Limpo",
+            "precipitacao": 0,
+            "icon_url": "w_ic_d_01anim.svg"
+        },
+        ...
+    ]
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>URLs Importantes</h2>
+            <ul>
+                <li><strong>Previsão diária de Lisboa:</strong> <a href="https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json">https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json</a></li>
+                <li><strong>Tipos de tempo:</strong> <a href="https://api.ipma.pt/open-data/weather-type-classe.json">https://api.ipma.pt/open-data/weather-type-classe.json</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

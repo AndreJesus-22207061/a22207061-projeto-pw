@@ -1,0 +1,62 @@
+[
+    {
+      "nome": "Coldplay",
+      "nacionalidade": "Reino Unido",
+      "ano_criacao": 1996,
+      "genero": "pop"
+    },
+    {
+      "nome": "Maroon 5",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 1994,
+      "genero": "pop"
+    },
+    {
+      "nome": "Adele",
+      "nacionalidade": "Reino Unido",
+      "ano_criacao": 2006,
+      "genero": "pop"
+    },
+    {
+      "nome": "Taylor Swift",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2004,
+      "genero": "pop"
+    },
+    {
+      "nome": "Ed Sheeran",
+      "nacionalidade": "Reino Unido",
+      "ano_criacao": 2004,
+      "genero": "pop"
+    },
+    {
+      "nome": "BTS",
+      "nacionalidade": "Coreia do Sul",
+      "ano_criacao": 2013,
+      "genero": "pop"
+    },
+    {
+      "nome": "Dua Lipa",
+      "nacionalidade": "Reino Unido",
+      "ano_criacao": 2015,
+      "genero": "pop"
+    },
+    {
+      "nome": "Justin Bieber",
+      "nacionalidade": "Canadá",
+      "ano_criacao": 2008,
+      "genero": "pop"
+    },
+    {
+      "nome": "Katy Perry",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2001,
+      "genero": "pop"
+    },
+    {
+      "nome": "Bruno Mars",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2004,
+      "genero": "pop"
+    }
+]

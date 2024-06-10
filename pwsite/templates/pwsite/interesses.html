@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web Opinião</title>
+
+
+    <style>
+        body {
+            background: red;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Programação Web Opinião</h1>
+
+
+        <nav>
+            <a href="{% url 'pwsite:index' %}">Introducao</a>
+            <a href="{% url 'pwsite:sobre' %}">Descricao</a>
+            <a href="{% url 'pwsite:interesses' %}">Opiniao</a>
+        <nav>
+
+    </header>
+
+    <main>
+      <h2>Opinião</h2>
+      <p>Estou a gostar bastante da disciplina de Programação Web na Universidade Lusófona.</p>
+      <p>Nesta disciplina, estou a gostar bastante de fazer as modelagens e agora a arquitetura MVT, acho super interessante e eriquecedor, acho que para já é, de todas as disciplinas que tive, a minha favorita.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

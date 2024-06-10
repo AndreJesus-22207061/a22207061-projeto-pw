@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px; /* Forçar a diminuição do tamanho da fonte */
+}
+
+main > div {
+    /* Centrando o <p> dos divs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-buttons-container  {
+    height: 10vh;
+    background: #0D0D31;
+    color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+.login-buttons button,
+ .header-buttons button{
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.login-buttons button:hover,
+.header-buttons button:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.hero-image {
+    /* Como o menu ocupa 10vh, este tem 90vh para o verme inteiro. */
+    height: 90vh;
+    background-image: url('/static/portfolio/fotoazul.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-container {
+    font-size: 39px; /* Tamanho da fonte */
+    width: 100%; /* Certificar que ocupa a largura total */
+    margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+}
+
+.subtitle-container {
+    font-size: 35px; /* Forçar a diminuição do tamanho da fonte */
+    width: 100%; /* Certificar que ocupa a largura total */
+    text-decoration: underline;
+}
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    position: relative; /* Definir a posição como relativa */
+    cursor: pointer;
+}
+
+
+#captionBandas,
+#captionCurso,
+#captionBlogues,
+#captionMeteo{
+    text-align: center;
+    color: #32CDE3;
+    font-size: 20px;
+    padding: 20px;
+    transition: opacity 0.3s; /* Adicionar transição de opacidade */
+
+}
+
+
+
+/* Estilos para fechar o modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page-title {
+    font-size: 35px !important;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center; /* Centraliza os botões horizontalmente */
+    margin-top: 40px; /* Adiciona margem superior para separar do título */
+}
+
+.button-background {
+    border: none;
+    color: white;
+    padding: 12px 24px; /* Reduz o espaço interno do botão */
+    text-align: center;
+    font-size: 16px;
+    margin: 8px; /* Aumenta o espaço externo entre os botões */
+    background-color: #0D0D31;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Adiciona transições para a mudança de cor, texto e sombra */
+    border-radius: 25px; /* Adiciona bordas arredondadas */
+    outline: none; /* Remove o contorno ao focar no botão */
+}
+
+.button-background:hover {
+    background-color: #1a1a4a; /* Muda a cor de fundo ao passar o mouse */
+    color: #ffffcc; /* Muda a cor do texto ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+
+
+.background-fixed {
+    /* Define o posicionamento relativo */
+    position: relative;
+    /* Como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
+    height: 90vh;
+    background-image: url('/static/portfolio/fundoazul.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* Centraliza o conteúdo verticalmente */
+    display: flex;
+}
+
+.background-content {
+    /* Alinha os itens verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-text p {
+    font-size: 35px !important; /* Forçar a diminuição do tamanho da fonte */
+    /* Ajuste opcional para espaçamento */
+    padding: 20px;
+}
+
+.button-container {
+    /* Ajuste opcional para espaçamento */
+    margin-top: 10px;
+}
+
+.footer {
+    font-size: 1em;
+    height: 10vh;
+    background: #0D0D31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    position: relative;
+}
+
+.center-text {
+    font-size: 25px !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move the container to the right */
+}
+
+.clock-container {
+    margin-right: 20px; /* Espaçamento entre o relógio e o ícone do tempo */
+}
+
+.weather-icon-footer {
+    width: 64px; /* Largura do ícone */
+    height: 64px; /* Altura do ícone */
+}
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header-buttons-container.dark-mode {
+    background: #1c1c1c;
+}
+
+.login-buttons button.dark-mode,
+.header-buttons button.dark-mode {
+    color: #e0e0e0;
+}
+
+.hero-image.dark-mode {
+    background-image: url('/static/portfolio/fotodark.jpg'); /* New dark mode image */
+}
+
+.background-fixed.dark-mode {
+    background-image: url('/static/portfolio/fundodark.jpg'); /* New dark mode background */
+}
+
+.button-background.dark-mode {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.button-background.dark-mode:hover {
+    background-color: #555;
+    color: #ffffcc;
+}
+
+.footer.dark-mode {
+    background: #1c1c1c;
+    color: #e0e0e0;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .header-buttons-container {
+        flex-direction: column; /* Altera a direção do flexbox para empilhar verticalmente */
+        height: auto; /* Altura automática para acomodar o conteúdo verticalmente */
+    }
+
+    .login-buttons button,
+    .header-buttons button {
+        margin: 10px 0; /* Adiciona margem superior e inferior aos botões */
+    }
+
+    .hero-image {
+        height: auto; /* Altura automática para ajustar o conteúdo */
+    }
+
+    .title-container,
+    .subtitle-container {
+        font-size: 25px; /* Reduz o tamanho da fonte */
+    }
+
+    .modal-content {
+        width: 90%; /* Ajusta a largura do modal */
+    }
+
+    .close {
+        font-size: 30px; /* Reduz o tamanho do botão de fechar */
+    }
+
+
+    .center-text {
+        position: static; /* Remove a posição absoluta */
+        text-align: center; /* Alinha o texto ao centro */
+        margin: 10px 0; /* Adiciona margem superior e inferior */
+    }
+
+    .right-container {
+        margin-left: 0; /* Remove a margem */
+    }
+
+    .clock-container {
+        margin-right: 10px; /* Reduz o espaçamento */
+    }
+}

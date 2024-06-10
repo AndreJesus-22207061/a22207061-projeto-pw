@@ -1,0 +1,11 @@
+{% extends 'blogues/layout.html' %}
+
+{% block content %}
+    <h2>Você tem a certeza que deseja excluir o autor "{{ autor.nome}}"?</h2>
+
+    <form action="{% url 'blogues:confirm_delete_autor' autor.id %}" method="post">
+        <a href="{% url 'blogues:autor' autor.id%}"><button type="button">Cancelar</button></a>
+        {% csrf_token %}
+        <button type="submit">Confirmar Exclusão</button>
+    </form>
+{% endblock %}

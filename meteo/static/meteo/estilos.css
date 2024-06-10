@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.weather-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-details p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.weather-details .min-temp,
+.weather-details .max-temp,
+.weather-details .date,
+.weather-details .description {
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.weather-icon {
+    margin-top: 25px;
+    width: 120px;
+    height: 120px;
+}
+
+.no-image {
+    font-style: italic;
+    color: #ffcccc;
+    margin-top: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Adicionando uma animação suave para as mudanças no ícone */
+.weather-icon {
+    transition: transform 0.3s;
+}
+
+.weather-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    margin-bottom: 10px; /* Adiciona um espaço entre os botões */
+}
+
+.button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+

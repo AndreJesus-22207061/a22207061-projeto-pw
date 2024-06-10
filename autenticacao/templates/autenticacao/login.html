@@ -1,0 +1,27 @@
+{% extends 'autenticacao/layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h3>Login</h3>
+
+        {% if mensagem %}
+            <p class="mensagem">{{ mensagem }}</p>
+        {% endif %}
+
+        <form class="login-form" action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username..">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Palavra-chave..">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+        <div class="links">
+            <a href="{% url 'registo' %}" class="btn btn-secondary">Registar</a>
+            <a href="{% url 'reset_password' %}" class="btn btn-link">Recuperar Palavra-chave</a>
+        </div>
+    </div>
+{% endblock %}

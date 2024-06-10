@@ -1,0 +1,31 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'meteo/estilos.css' %}">
+</head>
+<body>
+    <div class="container-5">
+        <div class="weather-container">
+            <h1><span class="city">{{ cidade }}</span></h1>
+            <div class="weather-info">
+                <div class="weather-details">
+                    <p>Temperatura Mínima: <span class="min-temp">{{ min_temp }}°C</span></p>
+                    <p>Temperatura Máxima: <span class="max-temp">{{ max_temp }}°C</span></p>
+                    <p>Data: <span class="date">{{ dataDeHoje }}</span></p>
+                    <p>Descrição do Tempo: <span class="description">{{ descricaoTempo }}</span></p>
+                </div>
+                {% if icon_url %}
+                    <img src="{{ icon_url }}" class="weather-icon">
+                {% else %}
+                    <p class="no-image">Não encontrou a imagem</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="button-container">
+                <a href="{% url 'meteo:previsao_proximos_5dias' %}" class="button"><b>Previsão dos Próximos 5 Dias em Lisboa</b></a>
+                <a href="{% url 'meteo:explicaAPI' %}" class="button"><b>Explicação API</b></a>
+        </div>
+    </div>
+</body>
+</html>

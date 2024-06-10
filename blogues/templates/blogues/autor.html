@@ -1,0 +1,30 @@
+{% extends 'blogues/layout.html' %}
+{% block content %}
+<div class="author-details">
+    <div class="author-header">
+        <h2>Detalhes do Autor</h2>
+    </div>
+    <div class="author-info">
+        {% if autor.foto %}
+            <img src="{{ autor.foto.url }}" alt="Foto do Autor" width="150px">
+        {% endif %}
+        <p>Nome: {{ autor.nome }}</p>
+        <p>Email: {{ autor.email }}</p>
+    </div>
+
+    <div class="author-articles">
+        <h3>Artigos do Autor:</h3>
+        <ul>
+            {% for artigo in artigos %}
+            <li><a href="{% url 'blogues:artigo' artigo.id %}">{{ artigo.titulo }}</a></li>
+            {% empty %}
+            <li>O autor ainda não escreveu nenhum artigo.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<nav class="author-navigation">
+    <a href="{% url 'blogues:autores' %}">Voltar para Lista de Autores</a>
+</nav>
+{% endblock %}

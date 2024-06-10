@@ -1,0 +1,27 @@
+{% extends 'blogues/layout.html' %}
+{% block content %}
+<div class="article-container">
+    <div class="article-header">
+        <h2>{{ artigo.titulo }}</h2>
+        <p class="article-meta">Autor: {{ artigo.autor }}</p>
+        <p class="article-meta">Data: {{ artigo.data_publicacao }}</p>
+    </div>
+    <div class="article-body">
+        <div class="article-cover">
+            {% if artigo.capa %}
+                <img src="{{ artigo.capa.url }}" alt="Capa do artigo">
+            {% else %}
+                <p class="no-cover">Capa não disponível</p>
+            {% endif %}
+        </div>
+        <div class="article-content">
+            <p>{{ artigo.conteudo }}</p>
+        </div>
+    </div>
+    <div class="article-footer">
+        <nav>
+            <a href="{% url 'blogues:artigos' %}">Voltar para Lista de Artigos</a>
+        </nav>
+    </div>
+</div>
+{% endblock %}

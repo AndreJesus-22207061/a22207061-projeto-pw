@@ -1,0 +1,181 @@
+/* Estilização do corpo */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/portfolio/fundoazul.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Estilização do cabeçalho */
+.header-buttons-container {
+    height: 10vh;
+    background: #0D0D31;
+    color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-buttons button,
+.login-buttons button {
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-buttons button:hover,
+.login-buttons button:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Estilização do conteúdo do cabeçalho */
+.header-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Estilização da seção de introdução */
+#intro {
+    background-color: rgba(0, 0, 50, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Estilização da seção de tecnologias */
+#technologies {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 50, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#technologies h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.technology {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.technology h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.technology p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Estilização do footer */
+footer {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    background-color: #0D0D31;
+}
+
+
+#videos {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 50, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#videos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.video-wrapper {
+    margin-bottom: 20px;
+}
+
+.video-wrapper h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+    .header-buttons button,
+    .login-buttons button {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .header-content h1 {
+        font-size: 2.5em;
+    }
+
+    #intro h2,
+    #technologies h2 {
+        font-size: 2em;
+    }
+
+    .technology h3 {
+        font-size: 1.5em;
+    }
+}

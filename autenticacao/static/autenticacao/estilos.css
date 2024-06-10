@@ -1,0 +1,103 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.cancel-link {
+    text-align: center;
+}
+
+.cancel-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cancel-link a:hover {
+    color: #0056b3;
+}
+
+.links {
+    text-align: center;
+    margin-top: auto; /* Alinha os links ao centro na parte inferior */
+}
+
+.links a {
+    margin-right: 10px;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto; /* Reduzindo a margem superior para dispositivos móveis */
+    }
+}

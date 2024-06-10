@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/estilos.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-xxzQAGRgmgJw3bo0vTTN51zLyVgEhDgJO1wFvXLBwa2IweEAHwsz9KdXBO8UnsZ6"
+        crossorigin="anonymous">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/portfolio/fundoazul.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Teko', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Coloca o footer no final da página */
+            background-color: #0D0D31; /* Adicione uma cor de fundo para o footer */
+        }
+
+        .about-me {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .about-me img {
+            width: 300px;
+            height: 300px;
+            border-radius: 30%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .about-me h2 {
+            text-align: center;
+        }
+
+        .about-me p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .skills,
+        .experience {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .skills h2,
+        .experience h2 {
+            text-align: center;
+        }
+
+        .skills ul,
+        .experience p {
+            margin-left: 20px;
+            list-style: none;
+            text-align: justify;
+        }
+
+        .skills ul li {
+            margin-bottom: 5px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header-buttons-container">
+            <div class="header-buttons">
+                <a href="{% url 'portfolio:index' %}"><button>Home</button></a>
+                <a href="{% url 'appcurso:lista_projetos' %}"><button>Projects</button></a>
+                <a href="{% url 'portfolio:aboutme' %}"><button>About Me</button></a>
+                <a href="{% url 'portfolio:sobrepw' %}"><button>Programação Web</button></a>
+                <a href="{% url 'portfolio:contacts' %}"><button>Contacts</button></a>
+            </div>
+            <div class="login-buttons">
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'logout' %}"><button><b>Logout</b></button></a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:4ch; height:4ch; margin-top:2px">
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                </svg>
+                {{request.user.username}}
+                {% else %}
+                <a href="{% url 'login' %}"><b><button>Login</b></button></a>
+                {% endif %}
+            </div>
+        </div>
+
+        <section class="about-me">
+            <div>
+                <img src="/static/portfolio/me.jpg" alt="Sua Foto">
+            </div>
+            <h2>About Me</h2>
+            <p>Concluindo Licenciatura em Engenharia Informática, na Universidade Lusófona de Lisboa, com alguma experiência em Java, SQL, Kotlin, C, C#, HTML, CSS, Python, Django e JavaScript.</p>
+            <p>Ensino Secundário concluído no Curso de Ciências e Tecnologias, na escola Secundária Miguel Torga.</p>
+            <p>Tenciono concluir os estudos e seguir uma carreira como programador</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Java</li>
+                <li>SQL</li
+                <li>Kotlin</li>
+                <li>C</li>
+                <li>C#</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <p>Participei num evento nacional, VS-Solar Challenge 2021, na disciplina de Aplicações Informáticas B pela escola Secundária Miguel Torga, que consistia em criar um carro movido a energia solar, carro esse que foi concebido por mim e pela a minha equipa.</p>
+            <p>Onde o meu papel foi, junto com o meu professor, desenvolver e programar um software capaz de fazer a comunicação entre um painel solar e o carro</p>
+            <p>Participei num evento regional e posteriormente nacional no dia 06-05-2021 conhecido por Junior Achievement Portugal (JAP), na disciplina de Aplicações Informáticas B pela escola Secundária Miguel Torga, que consistia em criar um mini-empresa com um projeto inovador, fui o CTO da minha mini-empresa StayFit, ou seja fiquei responsável pela parte tecnológica do projeto, que tinha por base incentivar a população a ter uma vida saudável a troca de algumas recompensas, e com essa ideia conseguimos passar aos nacionais do Junior Achievement Portugal (JAP)</p>
+            <p>Tive a minha primeira experiência profissional, remunerada, como Carteiro no CPLS Afeto LAS-1 de 20-01-2022 até 21-05-2022.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - André Jesus</p>
+    </footer>
+
+</body>
+
+</html>

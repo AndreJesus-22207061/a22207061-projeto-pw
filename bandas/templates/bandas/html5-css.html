@@ -1,0 +1,97 @@
+{% extends 'bandas/layout.html' %}
+{% load static %}
+
+{% block title %}HTML5 e CSS{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="selectors">
+    <h3>Seletores CSS</h3>
+    <p>O CSS (Cascading Style Sheets) é uma linguagem utilizada para definir a apresentação de documentos/ficheiros HTML. Os seletores são utilizados para "selecionar" os elementos que queremos estilizar.</p>
+    <ul>
+        <li>
+            <strong>Seletor:</strong> Universal (*)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona todos os elementos. Não utilizei em nenhuma página.
+        </li>
+        <li>
+            <strong>Seletor:</strong> Tipo (elemento)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"style="width:2ch; height:2ch"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona todos os elementos de um determinado tipo. Utilizado para estilizar todos os &lt;p&gt; numa página específica</a>. Utilizei nas páginas das Bandas, dos Blogues e do Curso.
+        </li>
+        <li>
+            <strong>Seletor:</strong> Classe (.classe)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona todos os elementos de uma determinada classe. Não utilizei em nenhuma página.
+        </li>
+        <li>
+            <strong>Seletor:</strong> ID (#id)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona um elemento único com um ID específico. Não utilizei em nenhuma página.
+        </li>
+        <li>
+            <strong>Seletor:</strong> Atributo ([atributo])
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"style="width:2ch; height:2ch"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos com um atributo específico. Utilizado para estilizar links com o atributo "target" numa página específica</a>. Utilizei nas páginas das Bandas, dos Blogues e do Curso.
+        </li>
+        <li>
+            <strong>Seletor:</strong> Pseudo-classe (:pseudo-classe)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"style="width:2ch; height:2ch"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos num estado específico. Utilizado para estilizar links quando são "hovered" numa página específica</a>. Utilizei nas páginas das Bandas, dos Blogues e do Curso.
+        </li>
+        <li>
+            <strong>Seletor:</strong> Pseudo-elemento (::pseudo-elemento)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona e estiliza uma parte específica de um elemento. Não utilizei em nenhuma página.
+        </li>
+    </ul>
+    </div>
+    <div class="combinators">
+        <h3>Combinadores de seletores</h3>
+    <ul>
+        <li>
+            <strong>Combinador:</strong> Descendente ( )
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"style="width:2ch; height:2ch"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos que são descendentes de um elemento especificado. Utilizado para estilizar &lt;p&gt; dentro de &lt;div&gt; numa página específica</a>. Utilizei nas páginas das Bandas, dos Blogues e do Curso.
+        </li>
+        <li>
+            <strong>Combinador:</strong> Filho (&gt;)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos que são filhos diretos de um elemento especificado. Não utilizei em nenhuma página.
+        </li>
+        <li>
+            <strong>Combinador:</strong> Adjacente (+)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos que são imediatamente precedidos por um elemento especificado. Não utilizei em nenhuma página.
+        </li>
+        <li>
+            <strong>Combinador:</strong> General Sibling (~)
+            <br>
+            <strong>Usado:</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width:2ch; height:2ch"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <br>
+            <strong>Comentário:</strong> Seleciona elementos que são precedidos por um elemento especificado, não necessariamente imediatamente. Não utilizei em nenhuma página.
+        </li>
+    </ul>
+    </div>
+</div>
+{% endblock %}

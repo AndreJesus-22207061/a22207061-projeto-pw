@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/estilosPW.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-xxzQAGRgmgJw3bo0vTTN51zLyVgEhDgJO1wFvXLBwa2IweEAHwsz9KdXBO8UnsZ6"
+        crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header-buttons-container">
+            <div class="header-buttons">
+                <a href="{% url 'portfolio:index' %}"><button>Home</button></a>
+                <a href="{% url 'appcurso:lista_projetos' %}"><button>Projects</button></a>
+                <a href="{% url 'portfolio:aboutme' %}"><button>About Me</button></a>
+                <a href="{% url 'portfolio:sobrepw' %}"><button>Programação Web</button></a>
+                <a href="{% url 'portfolio:contacts' %}"><button>Contacts</button></a>
+            </div>
+            <div class="login-buttons">
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'logout' %}"><button><b>Logout</b></button></a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:4ch; height:4ch; margin-top:2px">
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                </svg>
+                {{request.user.username}}
+                {% else %}
+                <a href="{% url 'login' %}"><b><button>Login</b></button></a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>A Minha Experiência em Programação Web</h1>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="intro-content">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou um jovem apaixonado por tecnologia e inovação. Esta página serve como uma carta de apresentação, onde mostro as minhas habilidades e conhecimentos obtidos na disciplina de programação web, com foco no framework Django.</p>
+            </div>
+        </section>
+
+        <section id="technologies">
+            <div class="technologies-content">
+                <h2>Tecnologias Utilizadas</h2>
+
+                <article id="python">
+                    <div class="technology">
+                        <h3>Python</h3>
+                        <p>Python é uma linguagem de programação poderosa e fácil de aprender. Utilizei Python para a manipulação de dados no backend do projeto. A sua sintaxe simples e a vasta quantidade de bibliotecas tornam o desenvolvimento rápido e eficiente.</p>
+                    </div>
+                </article>
+
+                <article id="django">
+                    <div class="technology">
+                        <h3>Django</h3>
+                        <p>Django é um framework web de alto nível que incentiva o desenvolvimento rápido e o design limpo e pragmático. Com Django, construí a estrutura principal do site, configurei a base de dados e implementei funcionalidades complexas de forma segura e escalável.</p>
+                    </div>
+                </article>
+
+                <article id="html">
+                    <div class="technology">
+                        <h3>HTML</h3>
+                        <p>HTML (HyperText Markup Language) é a espinha dorsal de qualquer página web. Usei HTML para estruturar o conteúdo e os elementos da página, garantindo uma base sólida e semântica para o site.</p>
+                    </div>
+                </article>
+
+                <article id="css">
+                    <div class="technology">
+                        <h3>CSS</h3>
+                        <p>CSS (Cascading Style Sheets) é utilizado para estilizar o HTML, proporcionando um layout visualmente atraente. Apliquei CSS para criar um design responsivo e moderno, ajustando cores, fontes e layouts para melhorar a experiência do utilizador.</p>
+                    </div>
+                </article>
+
+                <article id="javascript">
+                    <div class="technology">
+                        <h3>JavaScript</h3>
+                        <p>JavaScript é uma linguagem de programação essencial para a criação de páginas web dinâmicas e interativas. Utilizei JavaScript para adicionar funcionalidades interativas ao site.</p>
+                    </div>
+                </article>
+
+                <article id="apis">
+                    <div class="technology">
+                        <h3>APIs</h3>
+                        <p>As APIs (Application Programming Interfaces) permitem a comunicação entre diferentes sistemas e a integração de serviços externos. No projeto, utilizei APIs para integrar a API do IPMA no meu website de meteorologia.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="videos">
+            <div class="videos-content">
+                <h2>Meus Vídeos</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <h3>Site Tour</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KJPYpPArRUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-wrapper">
+                        <h3>Django hands-on</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/urSShvJDCU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Programação Web, Universidade Lusófona - André Jesus</p>
+        </div>
+    </footer>
+</body>
+</html>

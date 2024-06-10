@@ -1,0 +1,28 @@
+{% extends 'bandas/layout.html' %}
+{% load static %}
+{% block content %}
+    <h2>{{ musica.nome }}</h2>
+    <div class="musica-info">
+    <p>Tempo: {{ musica.tempo }}</p>
+    {% if musica.spotify_link %}
+        <p>Link do Spotify: <a href="{{ musica.spotify_link }}" target="_blank">{{ musica.spotify_link }}</a></p>
+    {% else %}
+        <p>Link do Spotify não disponível.</p>
+    {% endif %}
+    </div>
+    <div class="musica-letra">
+    {% if musica.letra %}
+        <h3>LETRA:</h3>
+        <p>{{ musica.letra }}</p>
+    {% else %}
+        <p>Letra não disponível.</p>
+    {% endif %}
+    </div>
+
+
+    <nav>
+        <a href="{% url 'bandas:album' album_id %}">Voltar para o álbum: clique aqui</a>
+    </nav>
+
+
+{% endblock %}

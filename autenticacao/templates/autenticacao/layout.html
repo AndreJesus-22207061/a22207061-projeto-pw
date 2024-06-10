@@ -1,0 +1,24 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'autenticacao/estilos.css' %}">
+        <title>Login</title>
+        <style>
+            body {
+                background: linear-gradient(to right, #6a11cb, #2575fc);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+
+            {% block content %}
+            {% endblock %}
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Programação Web, Universidade Lusófona - André Jesus</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'meteo/estilos-5.css' %}">
+    <title>Previsão do Tempo para os Próximos 5 Dias</title>
+</head>
+<body>
+    <div class="container-5">
+        <h1>Previsão do Tempo para os Próximos 5 Dias em {{ cidade }}</h1>
+
+        <div class="weather-container-5">
+            {% if previsao_proximos_5dias %}
+                {% for dia in previsao_proximos_5dias %}
+                    <div class="weather-day-5">
+                        <h2>{{ dia.data }}</h2>
+                        <p>Temperatura Mínima: <span class="min-temp-5">{{ dia.min_temp }}°C</span></p>
+                        <p>Temperatura Máxima: <span class="max-temp-5">{{ dia.max_temp }}°C</span></p>
+                        <p>Descrição do Tempo: <span class="descricaoTempo-5">{{ dia.descricaoTempo }}</span></p>
+                        <img src="{{ dia.icon_url }}" alt="Ícone Tempo">
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Não há previsão disponível para os próximos 5 dias.</p>
+            {% endif %}
+        </div>
+        <div class="button-container">
+            <a href="{% url 'meteo:tempo_lisboa' %}" class="button"><b>Tempo de Hoje em Lisboa</b></a>
+            <a href="{% url 'meteo:explicaAPI' %}" class="button"><b>Explicação API</b></a>
+        </div>
+    </div>
+</body>
+</html>

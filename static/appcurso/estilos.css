@@ -1,0 +1,393 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+
+.header-title {
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.header-image {
+    background: #135b75 url('/static/appcurso/engenhria_informatica.png') center/cover;
+    background-size: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+}
+
+footer {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #135b75;
+    padding: 20px 0;
+}
+
+.header-buttons-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos igualmente ao longo do eixo flexível */
+    align-items: center; /* Centraliza verticalmente os itens */
+    border-radius: 20px;
+}
+
+.header-buttons button:hover {
+    background-color: #5f88c1; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    color: white;
+}
+
+/* Estilos para os botões */
+.header-buttons button {
+    border: none;
+    padding: 0.3em 0.8em; /* Ajustando o padding com unidades de medida relativas */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    margin: 5px;
+}
+
+.login-buttons button:hover {
+    background-color: #5f88c1; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    color: white;
+}
+
+.login-buttons button {
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin-top: 5px;
+    margin: 5px;
+}
+
+
+
+.header-buttons button:focus,
+.login-buttons button:focus {
+    background-color: #5f88c1;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+.ano-titulo {
+    text-align: center;
+    border: 2px solid black; /* Borda ao redor do título do ano */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 600px; /* Define a largura máxima */
+    background-size: auto;
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #5f88c1; /* Cor de fundo da caixa */
+    display: inline-block; /* Garante que a largura da caixa seja apenas a necessária */
+    margin: 0 auto; /* Centraliza a caixa horizontalmente */
+}
+
+/* Estilos para o container de cada ano */
+.ano-container {
+    margin-top: 20px;
+    padding-bottom: 20px; /* Espaçamento entre anos */
+    display: flex; /* Ativa o modelo de layout flexbox */
+    flex-direction: column; /* Define a direção do eixo principal como coluna */
+    justify-content: space-between;
+}
+
+/* Estilos para o container de semestres */
+.semestres-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens flexíveis sejam dispostos em várias linhas, se necessário */
+    justify-content: space-between;
+}
+
+.semestre-titulo {
+    margin-bottom: 10px;
+    border: 2px solid black; /* Borda ao redor do título do ano */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 300px; /* Define a largura máxima */
+    background-size: auto;
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #5f88c1; /* Cor de fundo da caixa */
+    display: inline-block; /* Garante que a largura da caixa seja apenas a necessária */
+    margin: 0 auto; /* Centraliza a caixa horizontalmente */
+}
+
+/* Estilos para cada semestre */
+.semestre {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 1 45%; /* Permite que os semestres ocupem até 45% da largura do container, ajustando-se conforme necessário */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura total */
+}
+
+/* Estilos para cada lista de disciplinas */
+.disciplinas-list {
+    list-style-type: none;
+    padding: 5px;
+    align-items: center;
+}
+
+/* Estilos para cada item de disciplina */
+.disciplina-item {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o botão de edição */
+.edit-button {
+    border: none;
+    padding: 0.3em 0.8em; /* Ajustando o padding com unidades de medida relativas */
+    border-radius: 5px; /* Arredonda as bordas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #5f88c1; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    color: white; /* Altera a cor do texto para branco quando o mouse está sobre o botão */
+}
+
+/* Estilos para o botão de adição */
+.add-button {
+    border: none;
+    padding: 0.3em 0.8em; /* Ajustando o padding com unidades de medida relativas */
+    border-radius: 5px; /* Arredonda as bordas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #5f88c1; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    color: white; /* Altera a cor do texto para branco quando o mouse está sobre o botão */
+}
+
+.navigation {
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .ano-titulo {
+        width: 100%; /* Define a largura como 100% */
+        max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
+    }
+
+    .semestre-titulo {
+        width: 100%; /* Define a largura como 100% */
+        max-width: none; /* Remove a largura máxima para ocupar toda a largura disponível */
+    }
+
+    .semestre {
+        flex: 1 1 100%; /* Permite que os semestres ocupem 100% da largura do container em telas menores */
+        margin-bottom: 10px;
+    }
+
+    .semestres-container {
+        flex-direction: column; /* Muda a direção do flex para coluna em telas menores */
+        align-items: center;
+    }
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/* Estilos para o título da disciplina */
+.titulo-disciplina {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+/* Estilos para os detalhes da disciplina */
+.detalhes-disciplina {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada caixa de detalhes */
+.detalhes-box {
+    border: 4px solid #5f88c1; /* Borda cinza */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo para os títulos dos detalhes */
+.detalhes-box h3 {
+    margin-top: 0; /* Remove margem superior do título */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para os valores dos detalhes */
+.detalhes-box p {
+    margin: 0; /* Remove margem dos parágrafos */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.lista-projetos li {
+    margin-bottom: 30px; /* Espaçamento entre os itens da lista */
+    list-style-type: none;
+}
+
+.lista-projetos a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: solid black; /* Cor do texto dos links */
+}
+
+
+.projeto-nome {
+    margin-bottom: 10px;
+    border: 2px solid black; /* Borda ao redor do título do ano */
+    width: 300px;
+    background-size: auto;
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #5f88c1; /* Cor de fundo da caixa */
+    display: inline-block; /* Garante que a largura da caixa seja apenas a necessária */
+    margin: 0 auto; /* Centraliza a caixa horizontalmente */
+    text-align: center;
+}
+
+
+
+/* Estilos para a navegação */
+.botao-navegacao {
+    text-align: center; /* Centraliza o link */
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-item {
+    background-color: #5f88c1;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px;
+}
+
+.project-item:hover {
+    background-color: #5f88c1;
+}
+
+.project-name {
+    text-decoration: none;
+    color: #000; /* Nome dos projetos em preto */
+    font-weight: bold;
+}
+
+.project-name:hover {
+    color: #fff; /* Nome dos projetos em branco ao passar o mouse */
+}
+
+
+.editarProjeto:hover {
+    background-color: #5f88c1; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    color: white; /* Altera a cor do texto para branco quando o mouse está sobre o botão */
+}
+
+
+.editarProjeto {
+    border: none;
+    padding: 0.3em 0.8em; /* Ajustando o padding com unidades de medida relativas */
+    border-radius: 5px; /* Arredonda as bordas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+
+
+.project-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black; /* Borda preta */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    margin: 10px 0;
+}
+
+.project-links {
+    margin-bottom: 20px;
+}
+
+.project-links p {
+    margin: 10px 0;
+}
+
+.project-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-navigation a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.project-navigation a:hover {
+    text-decoration: underline;
+}
+
+

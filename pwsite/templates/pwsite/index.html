@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+    <style>
+        body {
+            background: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programação Web</h1>
+
+        <nav>
+            <a href="{% url 'pwsite:index' %}">Introducao</a>
+            <a href="{% url 'pwsite:sobre' %}">Descricao</a>
+            <a href="{% url 'pwsite:interesses' %}">Opiniao</a>
+        <nav>
+
+    </header>
+
+
+    <main>
+        <h2>Construindo o Futuro da Web</h2>
+        <p>Neste curso, exploraremos diversas tecnologias essenciais para o desenvolvimento web moderno:</p>
+        <ul>
+            <li><strong>Python e Django:</strong> Utilizados para construir aplicações web robustas e escaláveis, para perfecionistas com prazos.</li>
+            <li><strong>HTML, CSS e JavaScript:</strong> Essenciais para criar a estrutura, estilo e interatividade das páginas web.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

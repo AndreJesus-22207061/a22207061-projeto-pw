@@ -1,0 +1,515 @@
+{
+    "cursos": [
+        {
+            "nome": "Engenharia Informática",
+            "apresentacao": "O curso de licenciatura em Engenharia Informática da Universidade Lusófona forma licenciados capazes de assumir posições de destaque em projetos de engenharia informática ou equipas de desenvolvimento e consultadoria, na área da engenharia dos sistemas de informação, assumindo pela sua formação e atitude papéis relevantes na geração de inovação e riqueza. Nesse sentido, os estudantes obtêm as competências adequadas à conceção, realização e manutenção de sistemas informáticos, programação de aplicações e de sistemas, desenho arquiteturas de computação e comunicações, gestão de sistemas de informação e de conhecimento, assim como à compreensão e resolução dos problemas associados.",
+            "objetivos": "Os objetivos desta licenciatura são os seguintes:\n1. Fornecer um perfil profissional reconhecido no mercado, com fortes competências em Tecnologias de Informação e Comunicação, garantindo um elevado grau de empregabilidade e a possibilidade de prosseguir estudos de 2º ciclo com excelentes perspectivas de sucesso.\n2. Garantir um ensino de excelência assente num corpo docente de qualidade, integrando especialistas e doutorados com elevado potencial pedagógico e actividade comprovada em investigação.\n3. Dar acesso a estágios e formação em ambiente empresarial no decorrer do percurso académico, em colaboração com empresas líderes de mercado, potenciando níveis de qualificação profissional elevados antes da conclusão do curso.\n4. Garantir a realização de Trabalhos Finais de Curso inseridos em projectos inovadores, pelo facto dos muitos dos seus docentes estarem agregados a Centros de Investigação reconhecidos, participar em projectos de I&D e desenvolver parcerias com o meio empresarial.\n5. Desenvolver o espírito empreendedor dos alunos, através do Centro de Incubação de Empresas PLAY que apoia ideias de jovens empreendedores, pote",
+            "competencias": "O curso de licenciatura em Engenharia Informática da Universidade Lusófona desenvolve perfis com fortes competências tecnológicas e humanas, de forma a potenciar aos seus licenciados um elevado grau de empregabilidade, ou o prosseguimento dos estudos de 2º ciclo com excelentes perspectivas de sucesso. Os licenciados em Eng.ª Informática têm assim a possibilidade de escolher diversas carreiras profissionais:\n- Analista Programador\n- Consultor na área das TI\n- Arquitecto de Soluções\n- Arquitecto/Administrador de Redes\nNas seguintes áreas tecnológicas:\n- Desenvolvimento de Aplicações Empresariais\n- Desenvolvimento de Aplicações Móveis\n- Concepção e Gestão de Repositórios de Informação\n- Novos Paradigmas da Internet (Cloud Computing, Redes Sociais)\n- Gestão de Sistemas Informáticos\n- Etc..."
+
+        }
+    ],
+    "areas_cientificas": [
+        {"nome": "Matemática e Física"},
+        {"nome": "Arquiteturas e Sistemas Operativos"},
+        {"nome": "Redes e Telecomunicações"},
+        {"nome": "Programação e Engenharia de SW"},
+        {"nome": "Sistemas de Informação"},
+        {"nome": "Interação Humano-Máquina"},
+        {"nome": "Dados e Inteligência Artificial"},
+        {"nome": "Gestão e Softskills"},
+        {"nome": "Genérica"}
+    ],
+    "linguagens_programacao": [
+        {"nome": "Python"},
+        {"nome": "JavaScript"},
+        {"nome": "Java"},
+        {"nome": "C#"},
+        {"nome": "C"},
+        {"nome": "Kotlin"},
+        {"nome": "Assembly"}
+    ],
+    "projetos": [
+        {
+            "nome": "JogoDasTendas",
+            "descricao": "Desenvolver uma grelha 2D que simule o terreno do jogo, com árvores distribuídas aleatoriamente. Permitir que o jogador coloque tendas junto às árvores, assegurando que cada tenda esteja ligada apenas a uma árvore.\nImplementar regras para assegurar que as tendas não se toquem, nem mesmo na diagonal, e criar uma interface de linha de comando para a interação do jogador com o jogo",
+            "conceitos_aplicados": "Programação em Kotlin: ciclos, funções, arrays, arrays2D, leitura do teclado, escrita no ecrã.",
+            "tecnologias_usadas": "Kotlin\nIntelliJ",
+            "foto": "projeto_imagens/JogoDasTendas.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/JogoDasTendas",
+            "linguagens": ["Kotlin"],
+            "disciplina": "Fundamentos de Programação"
+        },
+        {
+            "nome": "RockInDeisi",
+            "descricao": "O objetivo deste projeto era desenvolver uma aplicacão em linguagem de Programação Java que permitia realizar queries relativamente sofisticadas sobre uma base de dados real contendo informações sobre músicas e artistas dos últimos 100 anos, obtidas de repositórios públicos.",
+            "conceitos_aplicados": "Algoritmos de ordenação e pesquisa\nEstruturas de dados\nDeteção de bottlenecks\nUtilização de otimizações não-algorítmicas como buffering",
+            "tecnologias_usadas": "Java\nIntelliJ\nJUnit\nChatGPT",
+            "foto": "projeto_imagens/rockindei.png",
+            "video_youtube_link": "https://youtu.be/XeeyfGQ35QE",
+            "project_link":"https://github.com/AndreJesus-22207061/RockInDeisi",
+            "linguagens": ["Java"],
+            "disciplina": "Algoritmia e Estruturas de Dados"
+        },
+        {
+            "nome": "StayFit",
+            "descricao": "O objetivo deste projeto é criar uma ideia de negocio que envolva tecnologia utilizando os conhecimentos adquiridos na disciplina",
+            "conceitos_aplicados": "Critical Thinking, apresentações públicas, personal marketing e desenvolvimento de competências.",
+            "tecnologias_usadas": "Canva\nGoogle Sites\nPowerPoint\nGitHub",
+            "foto": "projeto_imagens/stayfit.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/StayFit",
+            "linguagens": [],
+            "disciplina": "Competências Comportamentais"
+        },
+         {
+            "nome": "DerbyChess",
+            "descricao": "Criação um jogo de Xadrez!\nNa primeira parte deste projeto os alunos são desafiados a criar a lógica por trás deste jogo, sendo que vão começar apenas a jogar com Reis.\nNa segunda parte vão ser incorporadas as outras peças de maneira a completar este jogo.",
+            "conceitos_aplicados": "diagramas UML\nprogramação orientada a objetos de acordo com o teorema do encapsulamento",
+            "tecnologias_usadas": "Java\nKotlin\nJUnit 5\nGit e GitHub",
+            "foto": "projeto_imagens/derbychess.png",
+            "video_youtube_link": "https://youtu.be/GS9t6hF_n4s",
+            "project_link":"https://github.com/AndreJesus-22207061/DerbyChess",
+            "linguagens": ["Java","Kotlin"],
+            "disciplina": "Linguagens de Programação II"
+        },
+        {
+            "nome": "SmartHome",
+            "descricao": "No âmbito da disciplina de arquitetura avançada de computadores decidimos como projeto final criar uma casa inteligente.",
+            "conceitos_aplicados": "Arduino\nProgramação em C",
+            "tecnologias_usadas": "C\nArduino IDE\nThinkercad\nPowerPoint",
+            "foto": "projeto_imagens/smarthome.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/SmartHome",
+            "linguagens": ["C"],
+            "disciplina": "Arquiteturas Avançadas de Computadores"
+        },
+        {
+            "nome": "DataBaseTFCs",
+            "descricao": "Modelação de uma base de dados relacional transformando-a em um modelo dimensional (estrela) usando o Oracle Data Modeler\nImplementação de processos ETL para transferência e transformação de dados para um Datawarehouse com o Pentaho Data Integration\nCriação de relatórios e dashboards analíticos com visualizações interativas utilizando o Power BI Desktop, para facilitar a tomada de decisão baseada em dados",
+            "conceitos_aplicados": "Modelação Dimensional – o modelo em Estrela\nExtração, transformação e carregamento de dados para um Datawarehouse\nAnálise de dados – Ferramentas de Reporting",
+            "tecnologias_usadas": "Oracle Data Modeler\nPentaho Data Integration\nPower BI Desktop",
+            "foto": "projeto_imagens/databasetfc.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/DataBaseTFCs",
+            "linguagens": [],
+            "disciplina": "Sistemas de Suporte à Decisão"
+        },
+        {
+            "nome": "SistemaDeRega",
+            "descricao": "Com este Projeto pretendiamos desenvolver um automatismo de um sistema de rega tendo em atenção a fatores de avaria de sensores, avaria de mecanismos como a válvula do sistema e a outros fatores terçeiros ao sistema.",
+            "conceitos_aplicados": "",
+            "tecnologias_usadas": "",
+            "foto": "projeto_imagens/sistemaderega.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/SistemaDeRega",
+            "linguagens": ["Assembly"],
+            "disciplina": "Sistemas Digitais"
+        },
+        {
+            "nome": "PortManager",
+            "descricao": "O objetivo deste Projeto era desenvolver um simulador de um estaleiro de embarcações de carga utilizando a linguagem de programação C",
+            "conceitos_aplicados": "funcoes e classes em Linguagem C\nPonteiros",
+            "tecnologias_usadas": "Vscode\nReplit",
+            "foto": "projeto_imagens/portmang.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/PortManager",
+            "linguagens": ["C"],
+            "disciplina": "Linguagens de Programação I"
+        },
+        {
+            "nome": "CorridaDeCarros",
+            "descricao": "O objetivo deste projeto é criar uma aplicação em linguagem de programação C que utilize os conceitos de sistemas operativos para criar uma simulação de uma corrida O objetivo desta aplicação é desenvolver um servidor que realize a transmissão de telecomandose a receção de telemetria para um carro de corrida durante uma prova desportiva. A prova desportiva consiste num percurso de uma pista dividida em 3 setores, ao longo dos quaissão efetuadas um total de 10 voltas.",
+            "conceitos_aplicados": "Utilização de Fifos e Threads\nUtilização de Sinais\nCriação e utilização de Scripts",
+            "tecnologias_usadas": "Vscode\nPandora",
+            "foto": "projeto_imagens/corridacarros.png",
+            "video_youtube_link": "",
+            "project_link":"https://github.com/AndreJesus-22207061/CorridaDeCarros",
+            "linguagens": ["C"],
+            "disciplina": "Sistemas Operativos"
+        }
+    ],
+    "disciplinas": [
+        {
+            "nome": "Fundamentos de Física",
+            "ano": 1,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Mecânica clássica, eletrostátíca e corrente contínua",
+            "programa": "Grandezas físicas, dimensões e sistemas de unidades.\nReferencial, posição e trajetória. Movimento unidimensional.\nMovimento no espaço. Projéteis e movimento circular.\nLeis de Newton. Tipos de forças, força gravitacional.\nAplicações de Leis de Newton: plano inclinado, rodelas, mola oscilatória, pendulo.\nTrabalho. Forças conservativas e energia potencial.\nConservação da energia mecânica.\nCentro de massa, impulso e momento linear. Colisões.\nMomento de uma força, momento de inércia e momento angular.\nLei de Coulomb, campo elétrico.\nPotencial elétrico e capacitores.\nCorrente elétrica e resistência elétrica.\nCircuitos elétricos. Leis de Kirchhoff.",
+            "curricularIUnitReadableCode": "260-7336",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+        {
+            "nome": "Fundamentos de Programação",
+            "ano": 1,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "A UC de Análise e Conceção de Sistemas tem por objetivo garantir um enquadramento de gestão de Sistemas de Informação e o seu impacto na componente aplicacional, onde a componente de metodologia e engenharia de requisitos, tal como a metodologia e estruturação de testes de software, sejam unitários ou agregados, são essenciais para o sucesso de negócio das empresas.",
+            "programa": "Estrutura de Capítulos principais de conteúdos \\nVisão de Gerenciamento de Sistemas de Informação\\nEngenharia de Requisitos (Gestão de backlog, BPMN e UML – Modelação)\\nTestes de software\\nGestão de Projetos",
+            "curricularIUnitReadableCode": "ULHT260-7337",
+            "area_cientifica": "Programação e Engenharia de SW",
+            "linguagens": ["Kotlin"]
+        },
+        {
+            "nome": "Matemática Discreta",
+            "ano": 1,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Na UC de Matemática Discreta pretende-se contribuir para a aquisição de um conjunto de competências nos alunos: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral e capacidade de raciocínio matemático.\nPara tal, serão estudados conceitos de lógica matemática, teoria de conjuntos e teoria de números.",
+            "programa": "CP1. Cálculo proposicional e quantificadores\nCP2. Provas\nCP3. Teoria de conjuntos\nCP4. Funções\nCP5. Teoria de números",
+            "curricularIUnitReadableCode": "ULHT260-1656",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+        {
+            "nome": "Matemática I",
+            "ano": 1,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Esta disciplina abrange os métodos fundamentais de Cálculo associados a funções reais de variável real. É uma área transversal a todas as engenharias e demais cursos de cariz científico. Abrange os métodos clássicos de cálculo diferencial e Integral a uma dimensão.",
+            "programa": "1. Lógica Matemática\nDesignação e proposição. Valor lógico de uma proposição. Conjunção e disjunção de proposições. Conjunto, interseção e união de conjuntos.\n\n2. Os números reais\nNúmeros racionais e irracionais. Ordem e valor absoluto.\n\n3. Funções reais de variável real:\nGeneralidades sobre funções. Funções polinomiais e racionais. Funções trigonométricas. Função exponencial e logarítmica.\n\n3. Limite:\nDefinição e propriedades de limites de uma função. Continuidade de funções.\n\n4. Derivada:\nInterpretação geométrica. Regras de derivação. Derivadas de ordem superior.\n\n5. Estudo global de uma função:\nMonotonia e extremos relativos. Concavidade e pontos de inflexão. Assíntotas. Gráficos.\n\n6. Integração:\nPrimitiva imediata. Primitivação por substituição e por partes. Integral definido, teorema fundamental do cálculo. Aplicações da integração (áreas de figuras planas).",
+            "curricularIUnitReadableCode": "ULHT260-1",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+        {
+            "nome": "Sistemas Digitais",
+            "ano": 1,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Esta unidade curricular visa apresentar aos estudantes os conceitos básicos conducentes à compreensão de Unidades Curriculares mais avançadas, nomeadamente no domínio da arquitetura de computadores. Tem ainda como objetivo potenciar o desenvolvimento do raciocínio lógico.",
+            "programa": "1. Códigos numéricos e Sistemas de Numeração (5%)\nCircuitos Lógicos Básicos (5%)\n\n2. Álgebra de Boole (10%)\n\n3. Funções Lógicas (10%)\n\n4. Circuitos Combinatórios Básicos (15%)\n\n5. Circuitos Digitais com Memória (25%)\n\n6. Síntese de Circuitos Sequênciais Elementares (25%)",
+            "curricularIUnitReadableCode": "ULHT260-7",
+            "area_cientifica": "Arquiteturas e Sistemas Operativos",
+            "linguagens": []
+        },
+        {
+            "nome": "Álgebra Linear",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 5,
+            "apresentacao": "Na sequência da Matemática Discreta, a Álgebra Linear é uma disciplina do 2º semestre do curso e estuda os espaços vectoriais finitamente gerados sobre um corpo com particular incidência nos corpos primos Z_p e o corpo dos reais.\n\nO estudo dos espaços vectoriais confere aos estudantes competência para analisar problemas, equacioná-los e definir estratégias diversificadas de resolução.\n\nAs aplicações lineares conduzem ao conceito de matriz que aparece como ferramenta de cálculo no estudo dos espaços vectoriais.\n\nO aluno adquire algumas técnicas de cálculo matricial e confere ao conjunto das matrizes finitas a estrutura de espaço vectorial.\n\nO aluno tem a oportunidade de estabelecer um isomorfismo entre espaços vectoriais de matrizes e o espaço vectorial de aplicações lineares o que lhe permitirá selecionar, na resolução de problemas, o espaço onde trabalhar tendo em atenção a especificidade do problema em causa.",
+            "programa": "1. Estruturas algébricas: grupos comutativos, aneis e corpos. Os corpos Z_p, p primo.\n\n2. Espaços vectoriais finitamente gerador. Subespaços vectoriais.\n\n3. Sistemas de vectores equivalentes e dependência linear.\n\n4. Teorema de Steinitz e suas consequências.\n\n5. Aplicações lineares. Isomorfismos.\n\n6. Matrizes sobre um corpo. Espaços vectoriais de matrizes. Produto de Matrizes.\n\n7. Sistemas de Equações lineares: Estudo e resolução de equações vectoriais lineares. Representação de subespaços vectoriais através de sistemas de equações lineares.\n\n8. Determinantes: principais propriedades dos determinantes. Teorema de La Place.\n\n9. Valores e vectores próprios.",
+            "curricularIUnitReadableCode": "ULHT260-2091",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+        {
+            "nome": "Algoritmia e Estruturas de Dados",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "Esta UC surge no 2º semestre do 1º ano, na continuação do trabalho iniciado em Fundamentos de Programação (FP). Em FP, os alunos deram os primeiros passos na programação e preocuparam-se principalmente em produzir programas corretos. Agora, em Algoritmia e Estruturas de Dados, irão continuar a produzir programas corretos mas com preocupações de desempenho, a nível de tempo de execução e consumo de memória.\n\nEsta é uma UC fundamental no currículo de um Engenheiro Informático, que na sua vida profissional encontrará inúmeras situações em que terá que resolver problemas causados por fraco desempenho das aplicações e que exigem um conhecimento sólido dos princípios subjacentes aos principais algoritmos e estruturas de dados.\n\nNão obstante a aprendizagem de conceitos e técnicas de algoritmia e estruturas de dados, os alunos trabalham outras competências fundamentais. Nomeadamente, o espírito crítico e a capacidade de avaliar várias alternativas para resolver os problemas.",
+            "programa": "funções recursivas, algoritmos recursivos\ntipos de dados complexos\neficiência e optimização (algorítmica e não-algorítmica)\ncomplexidade de algoritmos\nalgoritmos de pesquisa\nalgoritmos de ordenação – bubble sort, selection sort, merge sort, quick sort\ntipos de dados abstractos – pilhas e filas\nlistas ligadas\nárvores binárias, árvores ordenadas, árvores AVL\nhashtables",
+            "curricularIUnitReadableCode": "ULHT260-13397",
+            "area_cientifica": "Programação e Engenharia de SW",
+            "linguagens": ["Java"]
+        },
+        {
+            "nome": "Arquitetura de Computadores",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 5,
+            "apresentacao": "Esta unidade curricular (UC) introduz conceitos de circuitos lógicos combinatórios e sequenciais. Os alunos aprendem a construir uma máquina sequencial e posteriormente um microprocessador. Como transformar uma operação numa instrução que possa ser interpretada e executada por um processador é um dos objetivos principais desta UC.",
+            "programa": "Aulas Teóricas\n\nCircuitos digitais MSI: Portas Lógicas, registos, contadores, memórias, multiplexers e descodificadores. Simulação.\nArquitetura de um Microprocessador (CPU) genérico.\nComponentes básicos: ALU, Registos e Barramentos.\nInstruções e Microinstruções\nMemórias de Programa e Dados.\nFluxo de informação num CPU: Operações Fetch e Execution\nEstudo de um Microcontrolador comercial de baixo custo.\nAmbiente de desenvolvimento, programação, simulação e teste.\n\nAulas Práticas\n\nComponentes digitais típicos\nSimulação de componentes básicos da arquitetura interna de um CPU genérico\nProjeto simples com um microcontrolador comercial económico",
+            "curricularIUnitReadableCode": "ULHT260-5857",
+            "area_cientifica": "Arquiteturas e Sistemas Operativos",
+            "linguagens": []
+        },
+        {
+            "nome": "Competências Comportamentais",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 4,
+            "apresentacao": "Esta unidade curricular (UC) inscreve-se num contexto onde têm sido elencadas necessidades de adaptação dos especialistas em informática ao contexto das organizações, nomeadamente no que às denominadas soft skills diz respeito. Assim, pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos distinguir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para o domínio profissional.",
+            "programa": "Marketing Pessoal:\n\nCV;\nPortefólio;\nApresentação pessoal e contextos de entrevista;\nApresentação em público e ferramentas de suporte;\nRedes sociais e Networking;\nFactos Vs Opiniões;\n\nGestão de tempo:\n\nTrabalho remoto e comunicação mediada;\nWork-life balance.\nAs tecnologias no trabalho: oportunidades e ameaças:\nTrabalho em equipa;\nComunicação;\nPersonal and Social Skills development;\nPercursos de carreira;\nCritical thinking and problem solving.",
+            "curricularIUnitReadableCode": "ULHT260-17267",
+            "area_cientifica": "Gestão e Softskills",
+            "linguagens": []
+        },
+        {
+            "nome": "Linguagens de Programação I",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 5,
+            "apresentacao": "Esta unidade curricular oferece uma extensa exploração da programação procedural usando a linguagem de programação C, abrangendo tópicos fundamentais e avançados. Os alunos obterão uma compreensão abrangente da história da programação C e dos seus benefícios, bem como aprenderão a criar e executar programas simples em C. O currículo concentra-se em conceitos essenciais, incluindo tipos de dados, variáveis, estruturas de controlo, funções e ponteiros, com oportunidades de experiência prática para reforçar o conhecimento. A unidade curricular também aborda tópicos avançados, como manipulação de ficheiros, alocação dinâmica de memória e estruturas de dados como listas e filas. Através de projetos de programação, os alunos desenvolverão experiência prática, com ênfase particular em obter uma compreensão completa da organização e operação da memória do computador como um recurso. No final do curso, os alunos serão capazes de criar programas eficientes que fazem uso eficaz da memória.",
+            "programa": "M0: Introdução: Visão geral, programação C, história, benefícios, configuração do ambiente, programa simples\nM1: Sintaxe Básica: Definições, tipos de dados, operadores, entrada/saída, estruturas de controlo\nM2: Estruturas de controle avançadas: Switch, break/continue, goto\nM3: Funções: definição/invocação, argumentos/valores de retorno, recursão\nM4: Matrizes e Strings: Definições, vetores de caracteres, strings, funções, matrizes 2D\nM5: Ponteiros: Definições, aritmética, pilha/heap, alocação dinâmica de memória\nM6: Ponteiros Avançados: Ponteiros para ponteiros/funções\nM7: Estruturas e Uniões: Definições, estruturas aninhadas, uniões\nM8: Entrada/saída de arquivo: visão geral, abertura/leitura/gravação de ficheiros, entrada/saída binária\nM9: Diretivas e Macros do Pré-processador: Definições, #define, #ifdef, #undef, macros com parâmetros\nM10: Operadores bit a bit: Definições, operadores bit a bit AND/OR/XOR/NOT/shift\nM11: Listas Ligadas: Definições, criação/manipulação, exemplos, pilhas/filas",
+            "curricularIUnitReadableCode": "ULHT260-498",
+            "area_cientifica": "Programação e Engenharia de SW",
+            "linguagens": ["C"]
+        },
+        {
+            "nome": "Matemática II",
+            "ano": 1,
+            "semestre": 2,
+            "ects": 5,
+            "apresentacao": "Geométria analítica e cálculo diferencial e integral para funções reais de várias variáveis reais.",
+            "programa": "1. Vectores e geometria do espaço\n\n1.1 Coordenadas cartesianas tridimensionais.\n1.2 Vectores, produto escalar.\n1.3 Rectas e planos.\n1.4 Superfícies cilíndricas e quádricas.\n1.5 Noções topológicas\n\n2. Funções vectoriais de variável real\n\n2.1 Funções vectoriais e curvas no espaço.\n2.2 Limites e continuidade. Diferenciabilidade, vector tangente a uma curva.\n2.3 Integração, comprimento de uma curva.\n\n3. Funções de várias variáveis\n\n3.1 Domínios e curvas de nível.\n3.2 Limites e continuidade.\n3.3 Derivadas parciais, derivadas de ordem superior.\n3.4 Diferenciabilidade, planos tangentes e aproximações polinómiais.\n3.5 Derivada direccional, vector gradiente e sua interpretação geométrica.\n3.6 Matriz Hessiana, extremos locais e pontos de sela.\n\n4. Integrais múltiplos\n\n4.1 Integrais duplos.\n4.2 Coordenadas polares e mudança de variáveis em integrais duplos.\n4.3 Integrais triplos.\n4.4 Coordenadas cilíndricas e esféricas. Mudança de variáveis em integrais triplos.",
+            "curricularIUnitReadableCode": "ULHT260-505",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+        {
+            "nome": "Arquiteturas Avançadas de Computadores",
+            "ano": 2,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Esta unidade curricular vem completar os conhecimentos adquiridos anteriormente nas UCs de Sistemas Digitais e Arquitectura de Computadores, abordando temas mais actuais e conceitos de mais alto nível. A compreensão destes conceitos avançados de arquitectura de computadores faz com que os alunos tomem consciência das limitações e possibilidades do hardware. Consequentemente poderão criar programas mais eficientes, capazes de tirar partido das capacidades do hardware e que tenham em conta as eventuais limitações deste.",
+            "programa": "1. Introdução\n2. O processador\nPrincipais módulos funcionais\nCondutas e riscos\nExceções\nParalelismo ao nível da instrução\n\n3. Hierarquia de memória\nDispositivos e tecnologia de armazenamento: disco magnético, memória flash\nMemórias cache\nMemória virtual\nConfiabilidade na hierarquia de memória\nParalelismo: coerência entre caches, RAID\n\n4. Arquiteturas paralelas\nLimites de frequência, dissipação de energia e memória\nParalelismo e limites ao aumento de desempenho\nSIMD e processadores vetoriais\nMultithreading em hardware\nArquiteturas de multiprocessador¿ aglomerados e computação em grelha.\nGPUs\nMedição de desempenho\n\n5. Virtualização\nOrigens e definição do conceito de máquina virtual\nConceito de hipervisor\nVariantes de implementação\nVirtualização de sistema: processador, memória, periféricos (E/S)\nExemplos de plataformas",
+            "curricularIUnitReadableCode": "ULHT260-13398",
+            "area_cientifica": "Arquiteturas e Sistemas Operativos",
+            "linguagens": ["C"]
+        },
+         {
+            "nome": "Bases de Dados",
+            "ano": 2,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "Esta unidade curricular tem por objetivo apresentar a importância da Gestão de Dados no seio de uma empresa, de forma a garantir quer a operação diária de negócio, bem como o apoio à decisão estratégica. Nesta unidade reforçar-se-á o enquadramento de estruturação e metodologias de criação das bases de dados.",
+            "programa": "O programa da unidade curricular é:\nA) Componente Teórico\n\nIntrodução\nModelo de relacionamento entre entidades\nO modelo relacional\nRefinamento de esquema: Conceito de normalização e transações\nArquitetura de SGBD e algum SQL Avançado\n\nB) Componente Prática\n\nIntrodução à linguagem SQL;\nInstruções: DDL, DML (DQL) e DCL\nOperações: WHERE, ORDER BY, GROUP BY;\nConceito avançados em SQL: Controlo de erros\nOperadores Relacionais: União, intersecção e Subtracção\nProduto Cartesiano (externo)\nQueries complexos (filtro com valores agregados) e sub-queries\nSet DDL; Instrução CREATE; Tipos de dados; Nulidade; Instruções ALTER e DROP\nINDICES e VIEWS\nControlo de erros: estrutura TRY¿CATCH\nProcedimentos (SP) e Triggers\nOperações com tabelas: Cursores",
+            "curricularIUnitReadableCode": "ULHT14-13447",
+            "area_cientifica": "Sistemas de Informação",
+            "linguagens": []
+        },
+         {
+            "nome": "Linguagens de Programação II",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "Esta UC é o culminar de um caminho iniciado em Fundamentos de Programação e aprofundado em Algoritmia e Estruturas de Dados, solidificando os conhecimentos de programação. Com um foco no desenvolvimento e manutenção de programas de elevada complexidade, o paradigma imperativo deixa de ser suficiente e são abordados os paradigmas orientado a objectos e funcional. São igualmente abordados conceitos adjacentes à fase de implementação, como o controlo de versões, os testes unitários e funcionais, a cobertura de código e outras métricas de qualidade. Esta é uma UC fundamental na formação de qualquer profissional da área de Informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais nos projectos empresariais em que estes alunos virão a estar inseridos.",
+            "programa": "Paradigmas de programação\nImperativo, funcional, orientado a objetos\nConceitos de programação por objectos\nEntidades, Atributos, Acções\nClasse vs Objecto, Principio do encapsulamento\nHerança, polimorfismo, parametrização por herança, composição\nUML\nDiagramas de classes\nJava orientado a objectos\nClasses, objectos, variáveis\nConstrutores, métodos\nVisibilidade, Exceptions\nEstruturas de dados: Arrays, Lists, Maps\nHerança, classes abstractas\nInput/Output\nTestes unitários\nJUnit\nControlo de versões\nGit, Github\nPadrões de desenho\nFactory, Singleton, Observer/Observable, Composite\nConceitos de programação funcional em Kotlin\nFunções puras, lambdas, funções de primeira ordem, iteração interna, operações com listas\nBoas práticas de programação multi-paradigma",
+            "curricularIUnitReadableCode": "ULHT14-18448",
+            "area_cientifica": "Programação e Engenharia de SW",
+            "linguagens": ["Java", "Kotlin"]
+        },
+         {
+            "nome": "Probabilidades e Estatística",
+            "ano": 2,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "A disciplina de Probabilidades e Estatística tem como objetivo fundamental dar ao estudante conceitos fundamentais da teoria da probabilidade e técnicas de estatística descritiva e inferência estatística, essenciais para o estudo de Engenharia.",
+            "programa": "1. Estatística Descritiva:\n\nTabelas de frequência;\nRepresentação Gráfica;\nCálculo de medidas descritivas de localização e dispersão;\n\n\n2. Regressão Linear:\n\nEstimar os parâmetros do modelo;\nCalcular e compreender o coeficiente de determinação;\n\n\n3. Teoria das Probabilidades:\n\nExperiência aleatória: Espaço amostral; Acontecimentos;\nÁlgebra de acontecimentos: Definição, Propriedades da Probabilidade; Axiomática Kolmogorov;\nProbabilidade Condicionada: Independência; Teorema de Bayes;\n\n\n4. Variáveis aleatórias discretas e contínuas:\n\n Função de probabilidade, Função densidade de probabilidade e Função distribuição;\nParâmetros de variáveis aleatórias: Valor esperado, Variância e Desvio padrão;\n\n\n5. Distribuições discretas: Bernoulli, Binomial e Poisson;\n\n\n6. Distribuições contínuas: Normal e Exponencial;\n\n\n7. Inferência Estatística:\n\n Amostra e Amostra Aleatória. Média amostral;\n\n\n8. Estimação:\n\nIntervalos de Confiança para Valor Esperado;\nTestes de Hipóteses para Valor Esperado.",
+            "curricularIUnitReadableCode": "ULHT260-620",
+            "area_cientifica": "Matemática e Física",
+            "linguagens": []
+        },
+         {
+            "nome": "Sistemas Operativos",
+            "ano": 2,
+            "semestre": 1,
+            "ects": 6,
+            "apresentacao": "O objectivo desta UC é o de apresentar os princípios fundamentais dos Sistemas Operativos, de forma a permitir uma compreensão detalhada da sua arquitectura e funcionamento, dando aos alunos os conhecimentos e capacidades para utilizar, configurar e optimizar este componente fundamental dos sistemas informáticos.",
+            "programa": "Introdução a Sistemas Operativos\nProcessos\nThreads e concorrência\nEscalonamento do CPU\nSincronização de processos\nDeadlocks\nGestão de Memória\nGestão de armazenamento em massa\nSistema de ficheiros\nVirtualizacao",
+            "curricularIUnitReadableCode": "ULHT260-6305",
+            "area_cientifica": "Arquiteturas e Sistemas Operativos",
+            "linguagens": ["C"]
+        },
+        {
+            "nome": "Engenharia de Requisitos e Testes",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "A UC de Análise e Conceção de Sistemas tem por objetivo garantir um enquadramento de gestão de Sistemas de Informação e o seu impacto na componente aplicacional, onde a componente de metodologia e engenharia de requisitos, tal como a metodologia e estruturação de testes de software, sejam unitários ou agregados, são essenciais para o sucesso de negócio das empresas.",
+            "programa": "Estrutura de Capítulos principais de conteúdos\n\nVisão de Gerenciamento de Sistemas de Informação\n\nEngenharia de Requisitos (Gestão de backlog, BPMN e UML – Modelação)\n\nTestes de software\n\nGestão de Projetos",
+            "curricularIUnitReadableCode": "ULHT260-22512",
+            "area_cientifica": "Sistemas de Informação",
+            "linguagens": []
+        },
+        {
+            "nome": "Processamento de Imagem",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "Esta unidade curricular é dedicada ao processamento de imagem, como fonte sensorial de maior alto nível. Aqui serão apresentadas as várias tecnologias de sensores de imagem, a captação de imagem e em seguida são estudados os vários métodos de tratamento de imagem e de extração de informação. Na componente prática será desenvolvida uma aplicação de processamento de imagem, que irá usar alguns dos métodos aprendidos durante o semestre para resolver um problema prático que será proposto, usando a biblioteca OpenCV e linguagem C#. Irá também ser dado umas noções de introdução à Inteligência Artificial aplicadas nas imagens.",
+            "programa": "Processamento de Imagens: dos pixels às características;\nOperações sobre imagens;\nSegmentação;\nDetecção de objetos;\nExtração de características;\nMedidas;\nAnálise de aplicações.\nConteúdos de ensino à distância: Tutoriais e apoio em videoconferência e/ou em comunicação assíncrona.",
+            "curricularIUnitReadableCode": "ULHT260-19082",
+            "area_cientifica": "Dados e Inteligência Artificial",
+            "linguagens": ["C#"]
+        },
+        {
+            "nome": "Programação Web",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "Esta Unidade Curricular pretende dar formação na área da programação Web em geral, e em particular no desenvolvimento de aplicações Web back-end e front-end, providenciando uma visão global do desenvolvimento moderno para a Web. No front-end, são introduzidos conceitos de estruturação, estilização e interação de conteúdos através das linguagens HTML, CSS e JavaScript. No back-end, é ensinado o desenvolvimento de aplicações empresariais seguindo o padrão de desenho model-view-control, recorrendo à linguagem Python e à Web framework Django. Pretende-se estimular a criatividade e imaginação no desenvolvimento de aplicações inovadoras que sejam eficientes, escaláveis e fáceis de modificar por um lado, e que ofereçam uma boa experiência para o utilizador. Esta é uma UC fundamental para qualquer profissional da área da informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais em projetos empresariais em que virão a estar inseridos.",
+            "programa": "A Web e seus paradigmas\n– Funcionamento da Internet e da Web: arquitetura e protocolos IP e HTTP\n– Tecnologias, paradigmas e padrões de desenho da Web\n\nHTML e CSS para desenho de páginas Web\n– HTML e seus elementos\n– Formulários para envio de dados\n– HTML5 e elementos semânticos\n– CSS e seus seletores, para estilização de conteúdos\n– Propriedades CSS\n– Design responsivo e layouts dinâmicos\n– Efeitos e animações CSS\n– Bootstrap\n\nJavaScript para programação Front-end\n– Programação Orientada a Eventos\n– Manipulação do DOM\n– JSON e APIs\n– Single Page Applications\n\nPython para desenvolvimento Web\n– Sintaxe, operadores, controlo de fluxos e tipos de dados\n– Funções e módulos\n– Gestão de ficheiros e pastas\n– Classes\n\nDjango web framework para Back-end\n– Web frameworks\n– Arquitetura MVT\n– Urls, views e templates\n– Linguagem template\n– Modelação de base de dados, ORM\n– Formulários\n– Autenticação\n– Implantação na cloud",
+            "curricularIUnitReadableCode": "ULHT260-11195",
+            "area_cientifica": "Programação e Engenharia de SW",
+            "linguagens": ["Python","JavaScript"]
+        },
+        {
+            "nome": "Redes de Computadores",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "Esta UC em Redes de Computadores faz um curso introdutório à rede de computadores Internet. Tem como objetivo apresentar todas as camadas de que é constituída a Internet (Inter-Networks), ou seja, Camada de Aplicação, Camada de Transporte, Camada de Rede e Camada de Ligação/Física.\n\nA abordagem aos Conteúdos Programáticos é feita de uma forma Top-Down, ou seja, começando com uma introdução de todas as camadas seguida por cada uma em detalhe começando pela camada de Aplicação.\n\nExiste uma componente prática nesta UC, da qual são demonstrados e treinados os conceitos introduzidos na componente teórica.\n\nEsta Unidade Curricular complementa e integra-se assim ao presente ciclo de estudos, oferecendo uma componente disciplinar de Redes de Computadores e sua evolução.",
+            "programa": "CP1: Introdução\n\nO que é a Internet?\nElementos\nConvenções\nServiços\nProtocolos\nThe Network Edge (Periferia da Network)\nThe Network Core (Malha interna)\nCircuit Switching (Comutação de Circuitos)\nPacket Switching (Comutação de Pacotes)\nTopologias e Redes de Acesso\nNíveis de Protocolos e Modelos de Serviço\n\nCP2: Camada de Aplicação\n\nEvolução de Aplicações de Internet\nDNS (Domain Name System)\nHTTP (HyperText Transfer Protocol)\nWeb proxies and caching\nSistemas Distribuídos\nPeer-to-peer (BitTorrent)\nAplicações Real-time (VoIP)\n\nCP3: Camada de Transporte\n\nService models\nUser Datagram Protocol (UDP)\nConnections (TCP)\nSliding Window (TCP)\nFlow control (TCP)\nRetransmission timers (TCP)\nCongestion control (TCP)\n\nCP4: Camada de Rede\n\nNetwork service models\nIP (Internet Protocol)\nNAT, a 'middlebox'\nRouting algorithms\n\nCP5: Camada Data Link\n\nFraming\nError detection and correction\nRetransmissions\nMultiple Access\nSwitching",
+            "curricularIUnitReadableCode": "ULHT260-1793",
+            "area_cientifica": "Redes e Telecomunicações",
+            "linguagens": []
+        },
+        {
+            "nome": "Sistemas de Suporte à Decisão",
+            "ano": 2,
+            "semestre": 2,
+            "ects": 6,
+            "apresentacao": "A UC de Sistemas de Suporte à Decisão / Business Intelligence tem por objetivo garantir que há a introdução à temática de processos de análise de dados para apoio às áreas de gestão das empresas. Neste sentido, a UC tem um papel fundamental no ciclo de estudo na compreensão dos processos de gestão e decisão de organizações, para além de como colocar infraestruturas de dados ao serviço do negócio empresarial.",
+            "programa": "Desafios de Negócio de DW\nArquiteturas DW\nMelhores Práticas de Modelação de DW\nImplementação de ETL\nBases de Dados específicas para BI\nFerramentas de Relatórios",
+            "curricularIUnitReadableCode": "ULHT260-7303",
+            "area_cientifica": "Dados e Inteligência Artificial",
+            "linguagens": []
+        }
+    ],
+    "docentes": [
+        {
+            "nome": "Pedro Alves",
+            "disciplinas": ["Fundamentos de Programação","Algoritmia e Estruturas de Dados","Linguagens de Programação II"]
+        },
+        {
+            "nome": "Cristiane Ferreira",
+            "disciplinas": ["Fundamentos de Física"]
+        },
+        {
+            "nome": "Alexander Mikovic",
+            "disciplinas": ["Fundamentos de Física"]
+        },
+        {
+            "nome": "Brena Lima",
+            "disciplinas": ["Fundamentos de Programação","Algoritmia e Estruturas de Dados","Redes de Computadores"]
+        },
+        {
+            "nome": "Bruno Saraiva",
+            "disciplinas": ["Fundamentos de Programação"]
+        },
+        {
+            "nome": "Lucio Studer",
+            "disciplinas": ["Fundamentos de Programação","Programação Web"]
+        },
+        {
+            "nome": "Rodrigo Correia",
+            "disciplinas": ["Fundamentos de Programação","Algoritmia e Estruturas de Dados"]
+        },
+        {
+            "nome": "Wellington Oliveira",
+            "disciplinas": ["Fundamentos de Programação","Algoritmia e Estruturas de Dados","Linguagens de Programação I","Arquiteturas Avançadas de Computadores"]
+        },
+        {
+            "nome": "Maria Silva",
+            "disciplinas": ["Matemática Discreta","Álgebra Linear"]
+        },
+        {
+            "nome": "Houda Harkat",
+            "disciplinas": ["Matemática Discreta","Processamento de Imagem","Redes de Computadores"]
+        },
+        {
+            "nome": "André Fonseca",
+            "disciplinas": ["Matemática I","Matemática II"]
+        },
+        {
+            "nome": "João Carvalho",
+            "disciplinas": ["Sistemas Digitais","Processamento de Imagem"]
+        },
+        {
+            "nome": "Carlos Fernandes",
+            "disciplinas": ["Sistemas Digitais"]
+        },
+        {
+            "nome": "Daniel Fernandes",
+            "disciplinas": ["Sistemas Digitais","Arquitetura de Computadores","Arquiteturas Avançadas de Computadores"]
+        },
+        {
+            "nome": "Sérgio Ferreira",
+            "disciplinas": ["Sistemas Digitais","Arquitetura de Computadores"]
+        },
+        {
+            "nome": "Luís Maia",
+            "disciplinas": ["Álgebra Linear"]
+        },
+        {
+            "nome": "Sofia Fernandes",
+            "disciplinas": ["Álgebra Linear"]
+        },
+        {
+            "nome": "Bruno Cipriano",
+            "disciplinas": ["Algoritmia e Estruturas de Dados","Linguagens de Programação II"]
+        },
+        {
+            "nome": "Duarte Neves",
+            "disciplinas": ["Algoritmia e Estruturas de Dados","Linguagens de Programação II"]
+        },
+        {
+            "nome": "Paulo Guedes",
+            "disciplinas": ["Arquitetura de Computadores"]
+        },
+        {
+            "nome": "Ricardo Santos",
+            "disciplinas": ["Arquitetura de Computadores"]
+        },
+        {
+            "nome": "Diogo Morais",
+            "disciplinas": ["Competências Comportamentais"]
+        },
+        {
+            "nome": "Tomáz Saraiva",
+            "disciplinas": ["Competências Comportamentais"]
+        },
+        {
+            "nome": "Pedro Serra",
+            "disciplinas": ["Linguagens de Programação I","Arquiteturas Avançadas de Computadores"]
+        },
+        {
+            "nome": "Daniel Silveira",
+            "disciplinas": ["Linguagens de Programação I","Sistemas Operativos"]
+        },
+        {
+            "nome": "Thiago Gustavo",
+            "disciplinas": ["Linguagens de Programação I"]
+        },
+        {
+            "nome": "Guilherme Antunes",
+            "disciplinas": ["Matemática II","Probabilidades e Estatística"]
+        },
+        {
+            "nome": "Sofia Naique",
+            "disciplinas": ["Matemática II","Probabilidades e Estatística"]
+        },
+        {
+            "nome": "Rui Ribeiro",
+            "disciplinas": ["Bases de Dados","Sistemas de Suporte à Decisão","Engenharia de Requisitos e Testes"]
+        },
+        {
+            "nome": "Luis Gomes",
+            "disciplinas": ["Bases de Dados","Engenharia de Requisitos e Testes"]
+        },
+        {
+            "nome": "João Caldeira",
+            "disciplinas": ["Bases de Dados","Sistemas de Suporte à Decisão"]
+        },
+        {
+            "nome": "João Craveiro",
+            "disciplinas": ["Sistemas Operativos","Redes de Computadores"]
+        },
+        {
+            "nome": "João Madeira",
+            "disciplinas": ["Sistemas Operativos"]
+        },
+        {
+            "nome": "José Brás",
+            "disciplinas": ["Engenharia de Requisitos e Testes"]
+        },
+        {
+            "nome": "Pedro Perdigão",
+            "disciplinas": ["Programação Web"]
+        },
+        {
+            "nome": "Rui Santos",
+            "disciplinas": ["Programação Web"]
+        },
+        {
+            "nome": "João Licinio",
+            "disciplinas": ["Sistemas de Suporte à Decisão"]
+        }
+    ]
+}

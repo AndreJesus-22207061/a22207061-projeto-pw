@@ -1,0 +1,177 @@
+[
+    {
+      "nome": "Parachutes",
+      "ano_lancamento": 2000,
+      "banda": "Coldplay",
+      "musicas": [
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/3AJwUDP919kvQ9QcozQPxg?si=d7a0b9728ebb41af","nome": "Yellow", "tempo": "5"},
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/0R8P9KfGJCDULmlEoBagcO?si=374e75f605ac4a49","nome": "Trouble", "tempo": "5"},
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/0qksx8mV28lztYIZ1om8ml?si=7b65f11b1065447a","nome": "Shiver", "tempo": "5"}
+      ]
+    },
+    {
+      "nome": "Songs About Jane",
+      "ano_lancamento": 2002,
+      "banda": "Maroon 5",
+      "musicas": [
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/2RjpDxBii8EvC6p6wxwCSz?si=c07ed63462034058","nome": "Harder to Breathe", "tempo": "3"},
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/6YgV0EF8xJMZz0Zm6BTaT4?si=6d0b2b27bc784880","nome": "This Love", "tempo": "4"},
+        {"spotify_link" : "https://open.spotify.com/intl-pt/track/7sapKrjDij2fpDVj0GxP66?si=a3feafb85d91461f","nome": "She Will Be Loved", "tempo": "5"}
+      ]
+    },
+    {
+      "nome": "21",
+      "ano_lancamento": 2011,
+      "banda": "Adele",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/4OSBTYWVwsQhGLF9NHvIbR?si=d6d342a66ab54971","nome": "Rolling in the Deep", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3bNv3VuUOKgrf5hu3YcuRo?si=e807646add8c4cf3","nome": "Someone Like You", "tempo": "5"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3di5hcvxxciiqwMH1jarhY?si=f2f0e5e4a34f4687","nome": "Set Fire to the Rain", "tempo": "5"}
+      ]
+    },
+    {
+      "nome": "1989",
+      "ano_lancamento": 2014,
+      "banda": "Taylor Swift",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/1kKlhuQE0HXp1IwBRpaH2P?si=1a9bee31889c4dcf","nome": "Shake It Off", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/2ls70nUDfjzm1lSRDuKxmw?si=4fd83d3592b041aa","nome": "Blank Space", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/71PmZqBXH0RUETqxpwlV0w?si=897cc0ed713c41e7","nome": "Style", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "÷ (Divide)",
+      "ano_lancamento": 2017,
+      "banda": "Ed Sheeran",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/7qiZfU4dY1lWllzX7mPBI3?si=296aad695db34ebc","nome": "Shape of You", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/6PCUP3dWmTjcTtXY02oFdT?si=35b46d9502ed4fbe","nome": "Castle on the Hill", "tempo": "5"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/0afhq8XCExXpqazXczTSve?si=2d95953e123442f4","nome": "Galway Girl", "tempo": "3"}
+      ]
+    },
+    {
+      "nome": "Map of the Soul: 7",
+      "ano_lancamento": 2020,
+      "banda": "BTS",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/0fZRNhPJ4AGmwY7rkpdbqK?si=7ef45e279fda4490","nome": "ON", "tempo": "5"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/2EmcTFQ1rM11wp2ztsXTHa?si=b44518b5e37a4389","nome": "Black Swan", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Future Nostalgia",
+      "ano_lancamento": 2020,
+      "banda": "Dua Lipa",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3PfIrDoz19wz7qK7tYeu62?si=90f726e0138b4bfe","nome": "Don't Start Now", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3AzjcOeAmA57TIOr9zF1ZW?si=4a11d67416dd455f","nome": "Physical", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Purpose",
+      "ano_lancamento": 2015,
+      "banda": "Justin Bieber",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/09CtPGIpYB4BrO8qb1RGsF?si=ac1d684434764aab","nome": "Sorry", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Teenage Dream",
+      "ano_lancamento": 2010,
+      "banda": "Katy Perry",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3f7gYMirBEKuc57218BjOY?si=a5849e0da9d3470a","nome": "California Gurls", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Doo-Wops & Hooligans",
+      "ano_lancamento": 2010,
+      "banda": "Bruno Mars",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/47Slg6LuqLaX0VodpSCvPt?si=074e2ed21fdb4b6c","nome": "Just the Way You Are", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/4lLtanYk6tkMvooU0tWzG8?si=f7bc36e71cfb4c15","nome": "Grenade", "tempo": "4"},
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/386RUes7n1uM1yfzgeUuwp?si=6cf46ea6bdf6499b","nome": "The Lazy Song", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "A Head Full of Dreams",
+      "ano_lancamento": 2015,
+      "banda": "Coldplay",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/69uxyAqqPIsUyTO8txoP2M?si=07d0c1abb8204dae","nome": "Adventure of a Lifetime", "tempo": "5"}
+      ]
+    },
+    {
+      "nome": "V",
+      "ano_lancamento": 2014,
+      "banda": "Maroon 5",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/69uxyAqqPIsUyTO8txoP2M?si=07d0c1abb8204dae","nome": "Maps", "tempo": "4"}
+
+      ]
+    },
+    {
+      "nome": "25",
+      "ano_lancamento": 2015,
+      "banda": "Adele",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/1Yk0cQdMLx5RzzFTYwmuld?si=c31bfd1db58a460a","nome": "Hello", "tempo": "5"}
+      ]
+    },
+    {
+      "nome": "Lover",
+      "ano_lancamento": 2019,
+      "banda": "Taylor Swift",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/1Yk0cQdMLx5RzzFTYwmuld?si=c31bfd1db58a460a","nome": "ME!", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "No.6 Collaborations Project",
+      "ano_lancamento": 2019,
+      "banda": "Ed Sheeran",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/0hVXuCcriWRGvwMV1r5Yn9?si=8225dad88b4e4244","nome": "I Don't Care", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Map of the Soul: Persona",
+      "ano_lancamento": 2019,
+      "banda": "BTS",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/4a9tbd947vo9K8Vti9JwcI?si=f1472a80d7434249","nome": "Boy with Luv", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Future Nostalgia: The Moonlight Edition",
+      "ano_lancamento": 2021,
+      "banda": "Dua Lipa",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/41z2bSbbtJ9wiIee4RXdi5?si=2c1c3d4a4ccd4895","nome": "Levitating", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Changes",
+      "ano_lancamento": 2020,
+      "banda": "Justin Bieber",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/16wAOAZ2OkqoIDN7TpChjR?si=c67c79afe5204538","nome": "Yummy", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Teenage Dream: The Complete Confection",
+      "ano_lancamento": 2012,
+      "banda": "Katy Perry",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/1nZzRJbFvCEct3uzu04ZoL?si=3b8b0281471c4ff4","nome": "Part of Me", "tempo": "4"}
+      ]
+    },
+    {
+      "nome": "Unorthodox Jukebox",
+      "ano_lancamento": 2012,
+      "banda": "Bruno Mars",
+      "musicas": [
+        {"spotify_link": "https://open.spotify.com/intl-pt/track/3w3y8KPTfNeOKPiqUTakBh?si=3916ace946714cc9","nome": "Locked Out of Heaven", "tempo": "4"}
+      ]
+    }
+  ]
